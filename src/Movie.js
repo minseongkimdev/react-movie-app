@@ -18,6 +18,24 @@ class Movie extends Component {
     }
 }
 
+const Movies = [
+    {
+        title : "Matrix",
+        poser : ""
+    },
+    {
+        title : "old boy",
+        poser : ""
+    },
+    {
+        title : "Inception",
+        poser : ""
+    },
+    {
+        title : "Star wars",
+        poser : ""
+    }
+]
 class MoviePoster extends Component {
     render() {
         return (
