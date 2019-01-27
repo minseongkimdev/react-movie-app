@@ -13,10 +13,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Movie title ={movie[0]}/>
-        <Movie title ={movie[1]}/>
-        <Movie title ={movie[2]}/>
-        <Movie title ={movie[3]}/>
+        {movies.map(movie=> {
+            <Movie title = {movie.title} poster  = {movie.poster}
+        })};
 
       </div>
     );
