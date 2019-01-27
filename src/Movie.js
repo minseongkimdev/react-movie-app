@@ -2,9 +2,15 @@ import React, {
     Component
 } from 'react';
 import './movie.css';
+import propTypes from "prop-types";
 
 
 class Movie extends Component {
+    static propTypes = {
+        title : React.propTypes.string,
+        poster : React.propTypes.string
+    }
+    
     render() {
         console.log(this.props);
         return (
@@ -18,24 +24,7 @@ class Movie extends Component {
     }
 }
 
-const Movies = [
-    {
-        title : "Matrix",
-        poser : ""
-    },
-    {
-        title : "old boy",
-        poser : ""
-    },
-    {
-        title : "Inception",
-        poser : ""
-    },
-    {
-        title : "Star wars",
-        poser : ""
-    }
-]
+
 class MoviePoster extends Component {
     render() {
         return (
