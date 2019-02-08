@@ -22,10 +22,7 @@ const movies = [
   }
 ]
 class App extends Component {
-  static propTypes = {
-    title : React.propTypes.string,
-    poster : React.propTypes.string
-  }
+  
   render() {
     return (
       <div className="App">
@@ -34,7 +31,7 @@ class App extends Component {
         })}
 
       </div>
-    );
+      );
   }
 }
 
